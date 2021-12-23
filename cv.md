@@ -3,14 +3,18 @@
 # Alexander Bobryshev
 
 ### Junior Frontend Developer
+
 ---
+
 ### Contact information:
 * **Phone:** +7 (921) 638-00-37
 * **E-mail:** alexanderbobryshev@icloud.com
 * **Telegram:** @albobryshev
 * [LinkedIn](https://www.linkedin.com/in/alex-bobryshev-b36baa226/)
 * [Behance](https://www.behance.net/albobryshev)
+
 ---
+
 ## **About Me:**
 
 I am starting a junior web developer. My profession used to be sales, working with graphic design. But I want to become a web developer. I'm going to the dream in small steps. The goal is to move to Canada.
@@ -41,6 +45,7 @@ alert(`Your body energy is ${energy} joules.
 This is 1 / ${Math.round(576000000000000000000 / energy)} of the yearly world energy consumption. Woah!`);
 
 ```
+
 ---
 
 ## Courses:
