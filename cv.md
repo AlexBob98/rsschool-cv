@@ -53,4 +53,4 @@ This is 1 / ${Math.round(576000000000000000000 / energy)} of the yearly world en
 
 ## Languages:
 
-* English (A1) - I study English every day to improve my knowledge.
+* English (A1) - I study English every day to improve my knowledge
