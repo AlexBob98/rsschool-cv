@@ -1,10 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>RS School</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Alexander Bobryshev - CV</title>
 </head>
-<body>
-  
+<body class="page">
+<header class="nav-container">
+  <div class="logo">
+    <h1>Alexander Bobryshev</h1></div><nav class="menu">  
+   <ul class="navigation">
+   <li><a href="#about-me" class="active">About Me</a></li>
+   <li><a href="#Skills">Skills</a></li>
+   <li><a href="#aboutcode">Code</a></li>
+   <li><a href="#contacts">Contact Info</a></li>
+   <li><a href="#courses">Courses</a></li>    
+   </ul></nav>
+</header>
+   <div class="info">
+   <div class="text-container">
+   <p>Hello,</p>
+   <p>I'm Alexander Bobryshev</p>
+   <p>I am Junior Frontend Developer</p>
+   <!-- <button name="button" class="down-cv" data-href="assests/CV.pdf">Download CV</button> -->
+   </div>
+   <img class="myphoto" src="img/mephoto.png" alt="Alexander Bobryshev"></div>
+ <main id="about-me" class="about-me">
+<div class="about-container">
+    <img src="img/mephoto.png" alt="About Me">
+    <article class="about-text">
+      <h2>About Me</h2>
+      <p>Junior Frontend Developer</p>
+      <p>Hello, my name is Alexander Bobryshev. This year I am studying a junior web developer in order to work in this profession. 
+        Before my profession to be junior web developer, sales working with graphic design. I want to become a web developer and I’m going to the dream in steps. 
+        The goal is to move my family to Canada.</p>
+  </article>
+</div></main>
+<div class="profSkill">
+<article id="Skills" class="skills">
+<h2 class="title2">Professional Skills</h2>
+<div class="skills-box">
+<ul class="hard-skills">
+    <li class="skill">html</li>
+    <li class="skill">css</li>
+    <li class="skill">javascript</li>
+    <li class="skill">git</li>
+    <li class="skill">VSCode</li>
+    <li class="skill">Photoshop</li>
+    <li class="skill">Illustrator</li>
+    <li class="skill">Figma</li>
+  </ul>
+  <div class="skills-levels">
+    <div class="level-box">
+      <div class="level html"></div>
+    </div>
+    <div class="level-box">
+      <div class="level css"></div>
+    </div>
+    <div class="level-box">
+      <div class="level javascript"></div>
+    </div>
+    <div class="level-box">
+      <div class="level git"></div>
+    </div>
+    <div class="level-box">
+      <div class="level vscode"></div>
+    </div>
+    <div class="level-box">
+      <div class="level photoshop"></div>
+    </div>
+    <div class="level-box">
+      <div class="level illustrator"></div>
+    </div><div class="level-box">
+      <div class="level figma"></div>
+    </div>
+  </div></div>
+</article></div>
+    <section class="about-code">
+        <div id="aboutcode" class="about-codetext"><h2>Code Example</h2></div>
+      <article class="code-example">
+        <h2>CodeWars Task:</h2><p>Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
+          </p>
+          <pre class="hljs sri">function rentalCarCost(<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span>) {
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">if</span> (<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> &gt;= <span class="hljs-number">7</span>) {
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> * <span class="hljs-number">40</span> - <span class="hljs-number">50</span><span class="hljs-comment" style="color: rgb(98, 114, 164);">;</span>
+            } <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">else</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">if</span> ( <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> &gt;= <span class="hljs-number">3</span> &amp;&amp; <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> &lt; <span class="hljs-number">7</span>) {
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> * <span class="hljs-number">40</span> - <span class="hljs-number">20</span><span class="hljs-comment" style="color: rgb(98, 114, 164);">;</span>
+            } <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">else</span> {
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> * <span class="hljs-number">40</span><span class="hljs-comment" style="color: rgb(98, 114, 164);">; </span>
+            }</pre>
+      </article>
+    </section>
+    <div id="courses" class="coursestext"><h2>Courses</h2></div>
+    <div class="box-container">
+      <div class="box-1">
+        <span><img src="img/codebasics.png" alt="CodeBasics"></span>
+        <h2>Code-Basics:</h2>
+        <ul>
+        <li>- HTML</li>
+        <li>- CSS</li>
+        <li>- JAVASCRIPT</li> 
+        </ul></div>
+      <div class="box-2">
+        <span><img src="img/hexlet.png" alt="Hexlet"></span>
+        <h2>Hexlet:</h2>
+        <ul>
+        <li>- JAVASCRIPT</li>
+        <li>- GITHUB</li>
+        </ul>
+      </div>
+      <div class="box-3">
+        <span><img src="img/rs_school_js.svg" alt="RS School"></span>
+        <h2>RS School:</h2>
+        <ul>
+        <li>«JavaScript/Front-end.</li>
+        <li style="font-size: 10px; text-align: center;">Stage 0» (in progress)</li> 
+        </ul></div>
+      
+        <div class="box-4">
+          <span><img src="img/logomachine.png" alt="RS School"></span>
+          <h2>Logomachine:</h2>
+          <ul>
+            <li>- Design Logo</li>
+            <li>- WebDesign on Figma</li>
+          </ul>
+      </div>
+</div>
+<section id="contacts" class="contact">
+  <div class="contact-education1">
+ <h2 class="contact-title">Contacts</h2>
+ <ul class="contact-info">
+      <li class="contact-block">
+        <div class="contact-image"><img width="35" src="img/github.png" alt="Github icon"></div>
+        <div class="contact-text">
+          <a href="https://github.com/AlexBob98" target="_blank" class="contact__link">Github</a>
+        </div>
+      </li>
+      <li class="contact-block">
+        <div class="contact-image"><img width="35" src="img/behance-icon.png" alt="Behance"></div>
+        <div class="contact-text">
+          <a href="https://www.behance.net/albobryshev" target="_blank" class="contact__link">Behance</a>
+        </div>
+      </li>
+      <li class="contact-block">
+        <div class="contact-image"><img width="35" src="img/vk-icon.png" alt="Vkontakte"></div>
+        <div class="contact-text">
+          <a href="https://vk.com/alexander_bobryshev" target="_blank" class="contact__link">Vkontakte</a>
+        </div>
+      </li>
+      <li class="contact-block">
+        <div class="contact-image"><img width="35" src="img/telegram-icon.png" alt="Telegram"></div>
+        <div class="contact-text">
+          <a href="https://t.me/albobryshev" target="_blank" class="contact__link">Telegram</a>
+        </div>
+      </li>
+      <li class="contact-block">
+        <div class="contact-image"><img width="35" src="img/mail-icon.png" alt="E-mail"></div>
+        <div class="contact-text">
+          <a href="mailto:alexanderbobryshev@icloud.com" class="contact__link">E-mail</a>
+        </div>
+      </li>
+      <li class="contact-block">
+        <div class="contact-image"><img width="35" src="img/russia-icon.png" alt="russia"></div>
+        <div class="contact-text">
+          <p class="contact-paragraph">Saint-Petersburg</p>
+        </div>
+      </li>
+    </ul>
+    <div class="language">
+      <article class="about-lang">
+        <h2>Language:</h2>
+        <ul>
+          <li>English - A1</li>
+          <li>Russian - Native ;)</li>
+        </ul>
+    </article>
+    </div>
+  </div>
+  <div class="contact-education2">
+    <h2 class="contact-title">Education</h2>
+    <ul class="contact-info">
+      <li class="education-block">
+        <img src="img/petrovsky.png" alt="Petrovsky college">
+        <div class="college-name">
+         <p>2004-2006</p>
+         <p>Petrovsky College, lawyer</p>
+         <p>Russia, Saint-Petersburg</p>
+        </div>
+    </ul><div class="projects">
+      <article class="about-proj">
+        <h2>Projects:</h2>
+        <ul>
+          <li><a href="https://cabrioservice.ru" target="_blank">Website Cabrioservice</a></li>
+          <li><a href="https://stickersp.ru" target="_blank">Website Stickersp</a></li>
+        </ul>
+    </article>
+    </div>
+  </div>
+</section>
+<div class="social-buttons">
+<a href="https://github.com/AlexBob98" target="_blank"><i class="soc-github"></i></a>
+<a href="https://t.me/albobryshev/" target="_blank"><i class="soc-tg"></i></a>
+<a href="https://www.instagram.com/al.bobryshev/" target="_blank"><i class="soc-insta"></i></a>
+<a href="https://vk.com/alexander_bobryshev" target="_blank"><i class="soc-vk"></i></a>
+</div>
+<a class="back_to_top" title="Наверх">&uarr;</a>
+<footer>
+  <div class="footer-icons">
+    <div class="github-codewars-icons">
+      <a class="github-icon" href="https://github.com/AlexBob98" target="_blank"><img width="35" src="img/github.png" alt="Github icon"></a>
+      <a class="cw-icon" href="https://www.codewars.com/users/AlexBob98" target="_blank"><img width="35" src="img/codewars.png" alt="Codewars icon"></a>
+    </div>
+    <span>2021</span>
+    <a class="rs-icon" href="https://rs.school/js/" target="_blank"><img width="100" src="img/rs_school_js.svg" alt="RS School icon"></a>
+  </div>
+</footer>
+ <script>
+const anchors = document.querySelectorAll('a[href*="#"]')
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+
+'use strict';
+(function() {
+  function trackScroll() {
+    var scrolled = window.pageYOffset;
+    var coords = document.documentElement.clientHeight;
+
+    if (scrolled > coords) {
+      goTopBtn.classList.add('back_to_top-show');
+    }
+    if (scrolled < coords) {
+      goTopBtn.classList.remove('back_to_top-show');
+    }
+  }
+
+  function backToTop() {
+    if (window.pageYOffset > 0) {
+      window.scrollBy(0, -80);
+      setTimeout(backToTop, 25);
+    }
+  }
+
+  var goTopBtn = document.querySelector('.back_to_top');
+  window.addEventListener('scroll', trackScroll);
+  goTopBtn.addEventListener('click', backToTop);
+})();
+
+</script>
 </body>
 </html>
