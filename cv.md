@@ -50,6 +50,12 @@ This is 1 / ${Math.round(576000000000000000000 / energy)} of the yearly world en
 
 ---
 
+## Projects:
+
+* [Alexa - Portfolio](https://rolling-scopes-school.github.io/alexbob98-JSFEPRESCHOOL/portfolio/)
+* [Api - image gallery](https://rolling-scopes-school.github.io/alexbob98-JSFEPRESCHOOL/image-galery/)
+* [Game - Tic Tac Toe](https://rolling-scopes-school.github.io/alexbob98-JSFEPRESCHOOL/tic-tac/)
+
 ## Languages:
 
 * English (A1) - I study English every day to improve my knowledge.
