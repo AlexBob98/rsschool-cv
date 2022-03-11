@@ -53,7 +53,7 @@ body.dark {
 .box.dark {
     box-shadow: 2px 6px 22px rgb(255 255 255 / 50%)
 }
-.box-container.dark {
+.box-blocks.dark {
     background: #111218;
 }
 .projects.dark {
@@ -216,7 +216,7 @@ nav ul li a:hover{
     background: url(../assets/img/dark.svg);
     background-repeat: no-repeat;
     height: 40px;
-    width: 50px;
+    width: 40px;
     cursor: pointer;
     transition: all 0.5s ease-out;
 }
@@ -229,8 +229,8 @@ nav ul li a:hover{
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    width: 50px;
-    height: 41px;
+    width: 40px;
+    height: 40px;
 }
 .switch_theme.light:hover {
     background: url(../assets/img/sun-h.svg);
@@ -425,6 +425,12 @@ button:active{
     transition: all 4s ease-in;
     border-radius: 25px;
 }
+.progress-bar:active {
+    transition: all 4s ease-in;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation: progress-animation 3s linear infinite;
+}
 .progress-bar:hover {
     transition: all 4s ease-in;
     background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
@@ -533,8 +539,11 @@ button:active{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: #fff;
     margin: 0 auto; 
+    width: 85%;
+}
+.box-blocks {
+    background: #fff;
 }
 .box span img {
     width: 75px;
@@ -583,7 +592,7 @@ button:active{
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 1px 2px 12px rgb(0 0 0 / 20%);
-    background: #f0f0f0;
+    background: #000000;
     transition: all 0.5s ease-in-out;
     overflow: hidden;
 }
@@ -885,6 +894,9 @@ button:active{
 .text-container {
     font-size: 2.8rem;
 }
+.box-container {
+    flex-wrap: wrap;
+}
 }
 @media (max-width: 995px) {
 .text-container {
@@ -896,11 +908,11 @@ button:active{
 .box-container {
     display: flex;
     justify-content: space-evenly;
-    background: #fff;
     margin: 0 auto;
     padding: 0;
     flex-wrap: wrap;
     flex: 0 1 50%;
+    width: 90%;
  }
 }
 @media (max-width: 768px) {
@@ -928,7 +940,7 @@ nav {
 }
 .menu-show.open {
     opacity: 1;
-    top: 71px;
+    top: 66px;
     left: 0;
     width: 75%;
     transform: translateY(0);
@@ -952,7 +964,7 @@ nav {
     z-index: 5;
     position: relative;
     width: 40px;
-    height: 32px;
+    height: 25px;
     cursor: pointer;
     margin-right: 4px;
 }
@@ -1044,8 +1056,8 @@ header .navigation li {
     border-radius: 10px;
 }
 .box-container {
+    width: 90%;
     display: flex;
-    background: #fff;
     flex: 0 1 50%;
     flex-wrap: wrap;
 }
@@ -1113,10 +1125,25 @@ header .navigation li {
 @media (max-width: 675px) {
 .menu-show.open {
     opacity: 1;
-    top: 71px;
+    top: 66px;
 }
 .about-container {
     width: 70%;
+}
+.skills {
+    width: 85%;
+}
+.skills-box {
+    width: 100%;
+    padding: 0px;
+}
+.code-example {
+    width: 75%;
+}
+
+.box {
+    width: 235px;
+    margin: 0px 0px 30px 0px;
 }
 .hard-skills {
     flex-basis: 25%;
@@ -1132,32 +1159,46 @@ header .navigation li {
     line-height: 1.2rem;
     border-radius: 10px;
 }
+.contact {
+    width: 90%;
  } 
+}
+
+@media (max-width: 565px) {
+.box {
+    width: 220px;
+}
+}
+
   @media (max-width: 520px) {
 .logo h1 {
     font-size: 20px;
 }
+
 .box-container {
-    display: flex;
-    justify-content: space-evenly;
-    background: #fff;
-    padding: 0;
-    margin: 0 auto;
-    flex-wrap: wrap;
     flex: 0 1 50%;
+    width: 80%;
 }
+.box {
+    width: 220px;
 }
+  }
+
+ @media (max-width: 462px) {
+    .box {
+        width: 200px;
+    }
+ } 
+
 @media (max-width: 420px) {
 .logo h1 {
     font-size: 20px;
 }
-
 .menu-show.open {
     opacity: 1;
-    top: 70px;
+    top: 66px;
 }
 .switch_theme {
-    padding: 0px 8px;
     margin-left: 10px;
 }
 .logo {
@@ -1188,24 +1229,17 @@ header .navigation li {
 }
 .box-container {
     display: flex;
-    background: #fff;
-    flex: 0 1 25%;
-    flex-wrap: wrap; 
-}
-.box-container {
-    display: flex;
     justify-content: space-evenly;
-    background: #fff;
     margin: 0 auto;
     padding: 0;
     flex-wrap: wrap;
     flex: 0 1 50%;
     }
 .contact-info {
-    width: 85%;
+    width: 100%;
 }
 .about-container {
-    width: 60%;
+    width: 65%;
 }
 .about-text {
     width: 100%;
@@ -1213,13 +1247,22 @@ header .navigation li {
     padding: 0;
     line-height: 1.4rem;
 }
-.skills-box {
+.skills {
     width: 80%;
+}
+.skills-box {
+    width: 100%;
     font-size: 12px;
     justify-content: center;
 }
+.code-example {
+    width: 70%;
+}
+.box {
+    width: 280px;
+}
 .project {
-    width: 265px;
+    width: 80%;
     height: 175px;
 }
 }
@@ -1228,16 +1271,30 @@ header .navigation li {
     opacity: 1;
     top: 75px;
 }
+.switch_theme {
+    height: 30px;
+}
+.switch_theme.light {
+    height: 30px;
+}
 .hard-skills {
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
 .skills-levels {
     flex-basis: 50%;
 }
 .skills-box {
-    width: 75%;
+    width: 100%;
+    padding: 10px;
+}
+.code-example p:nth-child(2) {
+    font-size: 14px;
 }
 .box {
     margin: 0px 0px 30px 0px;
+    width: 85%;
+}
+.project {
+    width: 85%;
 }
 }
