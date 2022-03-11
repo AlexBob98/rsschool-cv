@@ -14,8 +14,43 @@ burgerMenu.addEventListener('click', () =>{
   }
 })
 // End Menu Burger 
+const lightTheme = document.querySelector('.switch_theme');
+const butTheme = document.querySelector('.btn_theme');
+const blocksTheme = document.querySelectorAll('.profession-photo, .about-container, .text-container, .skills-box, .box, .about-me, .prof-skill, .project, .about-code, .coursestext, .box-container, .projects, .contact, .about-lang, .footer-icons, .code-example, .contact-info, .back_to_top');
 
 
+lightTheme.addEventListener('click', function () {
+  butTheme.classList.toggle('light'); 
+})
+
+// Local Storage & Switch Light Theme
+let themeMode = localStorage.getItem('theme')
+
+const lightOn = () => {
+  blocksTheme.forEach(item => item.classList.add('dark'));
+  document.body.classList.add('dark');
+  butTheme.classList.add('light');
+  localStorage.setItem('theme', 'light') 
+}
+const lightOff = () => {
+  blocksTheme.forEach(item => 
+  item.classList.remove('dark'))
+  document.body.classList.remove('dark');
+  butTheme.classList.remove('dark');
+  localStorage.setItem('theme', 'night')
+}
+if (themeMode === 'light') {
+lightOn()
+} 
+
+lightTheme.addEventListener('click', () => {
+  theme = localStorage.getItem('theme');
+  if(theme !== 'light') {
+      lightOn()
+  } else {
+      lightOff()
+  }
+});
 'use strict';
 (function() {
   function trackScroll() {
