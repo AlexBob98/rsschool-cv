@@ -16,7 +16,7 @@ burgerMenu.addEventListener('click', () =>{
 // End Menu Burger 
 const lightTheme = document.querySelector('.switch_theme');
 const butTheme = document.querySelector('.btn_theme');
-const blocksTheme = document.querySelectorAll('.profession-photo, .about-container, .text-container, .skills-box, .box, .about-me, .prof-skill, .project, .about-code, .coursestext, .box-container, .projects, .contact, .about-lang, .footer-icons, .code-example, .contact-info, .back_to_top');
+const blocksTheme = document.querySelectorAll('.profession-photo, .about-container, .text-container, .skills-box, .box, .about-me, .prof-skill, .project, .about-code, .coursestext, .box-blocks, .projects, .contact, .about-lang, .footer-icons, .code-example, .contact-info, .back_to_top');
 
 
 lightTheme.addEventListener('click', function () {
