@@ -232,6 +232,10 @@ nav ul li a:hover{
     width: 50px;
     height: 41px;
 }
+.switch_theme.light:hover {
+    background: url(../assets/img/sun-h.svg);
+    background-repeat: no-repeat;
+}
 .text-container {
     font-family: 'League Gothic';
     font-size: 4rem;
@@ -937,6 +941,7 @@ nav {
     transition: all 0.3s ease-in-out;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 30px 25px 10px #00000038;
+    z-index: 55;
 }
 .nav-container {
     flex-direction: row;
@@ -946,7 +951,7 @@ nav {
     display: block;
     z-index: 5;
     position: relative;
-    width: 50px;
+    width: 40px;
     height: 32px;
     cursor: pointer;
     margin-right: 4px;
@@ -960,6 +965,7 @@ nav {
     height:10%;
     transition: all 0.3s ease 0s;
     background-color: rgb(0, 0, 0);
+    border-radius: 15px;
 }
 .menu-burger::before,
 .menu-burger::after {
@@ -1150,8 +1156,11 @@ header .navigation li {
     opacity: 1;
     top: 70px;
 }
+.switch_theme {
+    padding: 0px 8px;
+    margin-left: 10px;
+}
 .logo {
-    text-align: center;
     letter-spacing: unset;
 }
 .hard-skills {
@@ -1217,7 +1226,7 @@ header .navigation li {
 @media (max-width: 320px) {
 .menu-show.open {
     opacity: 1;
-    top: 88px;
+    top: 75px;
 }
 .hard-skills {
     flex-basis: 50%;
