@@ -1,5 +1,7 @@
 # [rsschool-cv](https://alexbob98.github.io/rsschool-cv/)
 
+<img src="https://alexbob98.github.io/rsschool-cv/assets/img/mephoto.png" width="200" alt="Alexander Bobryshev">
+
 # Alexander Bobryshev
 
 ### Junior Frontend Developer
