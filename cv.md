@@ -1,10 +1,6 @@
-
 # Alexander Bobryshev
 
-
-
 ### Junior Frontend Developer
-
 
 ---
 
@@ -71,11 +67,11 @@ This is 1 / ${Math.round(576000000000000000000 / energy)} of the yearly world en
 ## Courses:
 
 
-* https://ru.code-basics.com/ Html, CSS, Javascript
+* https://ru.code-basics.com/ Html, CSS, Javascript;
 
-* https://ru.hexlet.io/ Javascript
+* https://ru.hexlet.io/ Javascript;
 
-* RS Schools Course «JavaScript/Front-end. Stage 0» (Score: 770.5)
+* RS Schools Course «JavaScript/Front-end. Stage 0» (Score: 770.5).
 
 ---
 
