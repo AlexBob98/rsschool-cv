@@ -26,7 +26,8 @@ I am starting a junior web developer. My profession used to be sales, working wi
 * GitHub;
 * VS Code;
 * Adobe Photoshop, Adobe Illustrator, CorelDraw;
-* Figma.
+* Adobe Effects
+* Figma
 
 ---
 
