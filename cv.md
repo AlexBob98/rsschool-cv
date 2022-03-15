@@ -39,16 +39,12 @@ I am starting a junior web developer. My profession used to be sales, working wi
 
 
 * HTML5, CSS3;
-
 * JavaScript Basic;
-
 * GitHub;
 * VS Code;
-
 * Adobe Photoshop, Adobe Illustrator, CorelDraw;
-
-* Figma.
-
+* Figma;
+* After Effects.
 
 
 ---
@@ -79,7 +75,7 @@ This is 1 / ${Math.round(576000000000000000000 / energy)} of the yearly world en
 
 * https://ru.hexlet.io/ Javascript
 
-* RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+* RS Schools Course «JavaScript/Front-end. Stage 0» (Score: 770.5)
 
 ---
 
