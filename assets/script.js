@@ -51,7 +51,7 @@ lightTheme.addEventListener('click', () => {
       lightOff()
   }
 });
-'use strict';
+
 (function() {
   function trackScroll() {
     let scrolled = window.pageYOffset;
@@ -76,52 +76,3 @@ lightTheme.addEventListener('click', () => {
   window.addEventListener('scroll', trackScroll);
   goTopBtn.addEventListener('click', backToTop);
 })();
-
-
-
-
-// const buttonsWrapper = document.querySelector(".map");
-// const slides = document.querySelector(".box-container");
-
-// buttonsWrapper.addEventListener("click", e => {
-//   if (e.target.nodeName === "BUTTON") {
-//     Array.from(buttonsWrapper.children).forEach(item =>
-//       item.classList.remove("actives")
-//     );
-//     if (e.target.classList.contains("first")) {
-//       slides.style.transform = "translateX(-0%)";
-//       e.target.classList.add("actives");
-//     } else if (e.target.classList.contains("second")) {
-//       slides.style.transform = "translateX(-10%)";
-//       slides.style.transition = "all 0.8s ease-in-out";
-//       e.target.classList.add("actives");
-//     } else if (e.target.classList.contains('third')){
-//       slides.style.transform = 'translatex(-20%)';
-//       e.target.classList.add('actives');
-//     }
-//   }
-// });
-
-
-
-
-
-// function parallaxEffect() {
-//   // Add event listener
-//   sectionParall.addEventListener("mousemove", parallax);
-//   const elem = document.querySelector(".text-container");
-//   // Magic happens here
-//   function parallax(e) {
-//       let mouseX = e.clientX / 90;
-//       let mouseY = e.clientY / 90;
-//       let depth1 = `${(mouseY) * 0.9}%`
-//       let depth2 = `${(mouseX) * 0.9}%`;
-//       console.log(depth2)
-//       elem.style.transform = `translateX(${depth2}) translateY(${depth1})`;
-
-//   }
-
-// }
-// parallaxEffect();
-
-
