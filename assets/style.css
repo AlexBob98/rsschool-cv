@@ -111,6 +111,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color:rgb(0, 0, 0)
 }
 .wrapper {
   min-height: 100%;
@@ -240,7 +241,7 @@ nav ul li a:hover {
   font-family: "League Gothic";
   font-size: 4rem;
   font-weight: 400;
-  line-height: 35px;
+  line-height: 10px;
   margin: 0;
   color: #0f0f0f;
   background: url("../assets/img/clip-bg.png") no-repeat;
@@ -286,14 +287,19 @@ nav ul li a:hover {
   outline: none;
   margin: 0px 10px;
 }
-/* .down-cv{
-    background-color: #000;
-    color: #fff;
-    border: none;
+.down-cv {
+  background-color: #000;
+  font-size: 25px;
+  font-family: 'Montserrat';
+  border: 2px solid #ff000087;
+  color: #fff;
+  padding: 10px;
+  transition: all 0.4s ease-in-out;
 }
-button:active{
-    transform: scale(1.1);
-} */
+.down-cv:hover {
+  background-color: #363636;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.37);
+}
 .about-me {
   display: flex;
   justify-content: center;
@@ -515,7 +521,7 @@ button:active{
   flex-direction: column;
   padding: 0;
   width: 220px;
-  height: 370px;
+  height: 25em;
   border-radius: 10px;
   background: #f0f0f0;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
@@ -550,8 +556,8 @@ button:active{
 }
 .text-box {
   display: flex;
-  padding: 10px 0;
-  width: 100%;
+  padding: 20px 20px;
+  height: 5em;
 }
 .text-in-box {
   width: 100%;
