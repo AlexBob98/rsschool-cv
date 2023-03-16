@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&display=swap");
-html * {
+
+html {
   scrollbar-width: thin;
   scrollbar-color: #bdae82 rgb(0, 0, 0);
+  scroll-behavior: smooth;
 }
 *::-webkit-scrollbar,
 html *::-webkit-scrollbar {
   height: 12px;
-  width: 12px;
+  width: 8px;
   transition: 0.5s ease-in-out;
 }
 *::-webkit-scrollbar-track,
@@ -35,14 +37,14 @@ body.dark {
 .skills-box.dark {
   box-shadow: 2px 6px 22px rgb(255 255 255 / 50%);
 }
-.text-container.dark {
+.hero__info-text.dark {
   filter: invert(1);
 }
 .about-code.dark {
   background: #111218;
   color: #fff;
 }
-.coursestext.dark {
+.courses__text.dark {
   background: #111218;
   color: #fff;
 }
@@ -52,7 +54,7 @@ body.dark {
 .box.dark {
   box-shadow: 2px 6px 22px rgb(255 255 255 / 50%);
 }
-.box-blocks.dark {
+.courses__box-items.dark {
   background: #111218;
 }
 .projects.dark {
@@ -111,7 +113,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color:rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
 }
 .wrapper {
   min-height: 100%;
@@ -121,20 +123,19 @@ a {
   max-width: 1440px;
   padding: 0px;
   margin: 0px auto;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
-.nav-container {
+.header-nav {
   border-radius: 0px 0px 25px 25px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background: #fff;
   box-shadow: 2px 2px 12px rgb(0 0 0 / 20%);
   padding: 0px 25px;
   position: relative;
-  max-width: calc(80% + 2px);
+  width: 85%;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
 }
 header .navigation {
   display: flex;
@@ -194,16 +195,16 @@ nav ul li a {
 nav ul li a:hover {
   color: #aaa;
 }
-.logo {
+.header-nav__logo {
   color: #000;
   font-weight: 600;
 }
-.logo h1 {
+.header-nav__logo h1 {
   font-size: 23px;
   font-family: "Rubik";
   user-select: none;
 }
-.burger-menu {
+.header-nav__burger-menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,7 +238,7 @@ nav ul li a:hover {
   background: url(../assets/img/sun-h.svg);
   background-repeat: no-repeat;
 }
-.text-container {
+.hero__info-text {
   font-family: "League Gothic";
   font-size: 4rem;
   font-weight: 400;
@@ -262,24 +263,24 @@ nav ul li a:hover {
     background-size: 0 100%;
   }
 }
-.title-block {
+.courses__text-title {
   padding: 60px 0;
 }
-.info {
+.hero__info {
   width: 85%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.text-container {
+.hero__info-text {
   padding: 0px 40px;
 }
-.myphoto {
+.hero__info-img {
   height: 450px;
   border: 0;
 }
-.text-container button {
+.hero__info-text button {
   width: 145px;
   height: 50px;
   border-radius: 10px;
@@ -287,16 +288,15 @@ nav ul li a:hover {
   outline: none;
   margin: 0px 10px;
 }
-.down-cv {
+.hero__info-download {
   background-color: #000;
   font-size: 25px;
-  font-family: 'Montserrat';
-  border: 2px solid #ff000087;
+  font-family: "Montserrat";
   color: #fff;
   padding: 10px;
   transition: all 0.4s ease-in-out;
 }
-.down-cv:hover {
+.hero__info-download:hover {
   background-color: #363636;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.37);
 }
@@ -507,7 +507,7 @@ nav ul li a:hover {
   border-radius: 10px;
   line-height: 1.8rem;
 }
-.coursestext {
+.courses__text {
   background: #fff;
   display: flex;
   justify-content: center;
@@ -566,7 +566,7 @@ nav ul li a:hover {
   padding: 10px 0;
   margin: 0px;
 }
-.box-container {
+.courses__box-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -582,7 +582,7 @@ nav ul li a:hover {
   justify-content: center;
 }
 /*  */
-.box-blocks {
+.courses__box-items {
   background: #fff;
 }
 .box span img {
@@ -935,21 +935,21 @@ nav ul li a:hover {
   display: block;
 }
 @media (max-width: 1200px) {
-  .text-container {
+  .hero__info-text {
     font-size: 2.8rem;
   }
-  .box-container {
+  .courses__box-container {
     flex-wrap: wrap;
   }
 }
 @media (max-width: 995px) {
-  .text-container {
+  .hero__info-text {
     font-size: 2rem;
   }
-  .myphoto {
+  .hero__info-img {
     height: 300px;
   }
-  .box-container {
+  .courses__box-container {
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
@@ -960,10 +960,10 @@ nav ul li a:hover {
   }
 }
 @media (max-width: 768px) {
-  .text-container p {
+  .hero__info-text p {
     font-size: 1em;
   }
-  .logo {
+  .header-nav__logo {
     font-weight: 300;
     font-size: 8px;
   }
@@ -998,11 +998,11 @@ nav ul li a:hover {
     box-shadow: 0px 30px 25px 10px #00000038;
     z-index: 55;
   }
-  .nav-container {
+  .header-nav {
     flex-direction: row;
     align-items: center;
   }
-  .menu-burger {
+  .header-nav__menu-burger {
     display: block;
     z-index: 5;
     position: relative;
@@ -1011,9 +1011,9 @@ nav ul li a:hover {
     cursor: pointer;
     margin-right: 4px;
   }
-  .menu-burger span,
-  .menu-burger::before,
-  .menu-burger::after {
+  .header-nav__menu-burger span,
+  .header-nav__menu-burger::before,
+  .header-nav__menu-burger::after {
     left: 0;
     position: absolute;
     width: 100%;
@@ -1022,28 +1022,28 @@ nav ul li a:hover {
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
   }
-  .menu-burger::before,
-  .menu-burger::after {
+  .header-nav__menu-burger::before,
+  .header-nav__menu-burger::after {
     content: "";
   }
-  .menu-burger::before {
+  .header-nav__menu-burger::before {
     top: 0;
   }
-  .menu-burger::after {
+  .header-nav__menu-burger::after {
     bottom: 0;
   }
-  .menu-burger span {
+  .header-nav__menu-burger span {
     top: 50%;
     transform: scale(1) translate(0px, -50%);
   }
-  .menu-burger.open span {
+  .header-nav__menu-burger.open span {
     transform: scale(0) translate(0px, -50%);
   }
-  .menu-burger.open::before {
+  .header-nav__menu-burger.open::before {
     top: 50%;
     transform: rotate(-45deg) translate(0px, -50%);
   }
-  .menu-burger.open::after {
+  .header-nav__menu-burger.open::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0px, 50%);
   }
@@ -1060,7 +1060,7 @@ nav ul li a:hover {
     padding: 6px;
     font-size: 23px;
   }
-  .info {
+  .hero__info {
     width: 85%;
   }
   .about-container {
@@ -1098,7 +1098,7 @@ nav ul li a:hover {
     line-height: 1.6rem;
     border-radius: 10px;
   }
-  .box-container {
+  .courses__box-container {
     width: 90%;
     display: flex;
     flex: 0 1 50%;
@@ -1160,7 +1160,7 @@ nav ul li a:hover {
   .social-buttons {
     display: none;
   }
-  .myphoto {
+  .hero__info-img {
     height: 210px;
     border: 0;
   }
@@ -1194,7 +1194,7 @@ nav ul li a:hover {
   .skills-levels {
     flex-basis: 60%;
   }
-  .info {
+  .hero__info {
     flex-direction: column;
   }
   .sri {
@@ -1214,11 +1214,11 @@ nav ul li a:hover {
 }
 
 @media (max-width: 520px) {
-  .logo h1 {
+  .header-nav__logo h1 {
     font-size: 20px;
   }
 
-  .box-container {
+  .courses__box-container {
     flex: 0 1 50%;
     width: 80%;
   }
@@ -1234,7 +1234,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 420px) {
-  .logo h1 {
+  .header-nav__logo h1 {
     font-size: 20px;
   }
   .menu-show.open {
@@ -1244,7 +1244,7 @@ nav ul li a:hover {
   .switch_theme {
     margin-left: 10px;
   }
-  .logo {
+  .header-nav__logo {
     letter-spacing: unset;
   }
   .hard-skills {
@@ -1253,7 +1253,7 @@ nav ul li a:hover {
   .skills-levels {
     flex-basis: 50%;
   }
-  .text-container {
+  .hero__info-text {
     margin: 0 auto;
     text-align: center;
     margin-top: 15px;
@@ -1270,7 +1270,7 @@ nav ul li a:hover {
     padding: 11px;
     border-radius: 10px;
   }
-  .box-container {
+  .courses__box-container {
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
