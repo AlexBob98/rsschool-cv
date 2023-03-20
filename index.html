@@ -42,59 +42,75 @@
         </nav>
         <div title="On/Off Dark Mode" class="switch_theme btn_theme"></div>
       </header>
-        <section class="hero">
-          <div class="hero__info">
-            <div class="hero__info-text">
-              <p>Hello everyone.</p>
-              <p>My name is Aleksandr Bobryshev</p>
-              <p>I'm a Frontend Developer</p>
-              <a class="hero__info-download" href="assets/cv.pdf" download>Download CV</a>
-            </div>
-            <img
-              class="hero__info-img"
-              src="assets/img/mephoto.png"
-              alt="Aleksandr Bobryshev"
-            />
+      <section class="hero">
+        <div class="hero__info">
+          <div class="hero__info-text">
+            <p>Hello everyone.</p>
+            <p>My name is Aleksandr Bobryshev</p>
+            <p>I'm a Frontend Developer</p>
+            <a class="hero__info-download" href="assets/cv.pdf" download
+              >Download CV</a
+            >
           </div>
-        </section>
-        <section class="about-me" id="about-me">
-          <div class="about-container">
-            <img src="assets/img/mephoto.png" alt="About Me" />
-            <article class="about-text">
-              <h2>About Me</h2>
-              <p>Junior Frontend Developer</p>
-              <p class="title-me">
-                Hello, my name is Alexander Bobryshev. This year I am studying a
-                junior web developer in order to work in this profession. Before
-                my profession to be junior web developer, sales working with
-                graphic design. I want to become a web developer and I’m going
-                to the dream in steps. The goal is to move my family to Canada,
-                British Columbia.
-              </p>
-            </article>
-          </div>
-        </section>
-        <section class="prof-skill" id="skills">
-          <article class="skills">
-            <h2 class="title-block">Professional Skills</h2>
-            <div class="skills-box">
-              <ul class="hard-skills"></ul>
-              <div class="skills-levels"></div>
-            </div>
-          </article>
-        </section>
-        <section class="about-code">
-          <div id="aboutcode" class="title-block"><h2>Code Example</h2></div>
-          <article class="code-example">
-            <h3>CodeWars Task:</h3>
+          <img
+            class="hero__info-img"
+            src="assets/img/mephoto.png"
+            alt="Aleksandr Bobryshev"
+          />
+        </div>
+      </section>
+      <section class="about-me" id="about-me">
+        <div class="about-container">
+          <img src="assets/img/mephoto.png" alt="About Me" />
+          <article class="about-text">
+            <h2>About Me</h2>
             <p>
-              Every day you rent the car costs $40. If you rent the car for 7 or
-              more days, you get $50 off your total. Alternatively, if you rent
-              the car for 3 or more days, you get $20 off your total.
+              Hello, my name is Aleksandr Bobryshev, and I am a Frontend
+              Developer. I am passionate about creating interactive websites and
+              applications that can improve people's lives. 
+            </br>I have a
+              degree/certificates in Rolling Scopes School (EPAM) and have
+              experience working with JavaScript, TypeScript and React
+              framework. I also have basic knowledge in NodeJS.
             </p>
-            <pre
-              class="hljs sri"
-            >function rentalCarCost(<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span>) {
+            <p>
+              I am confident that my combination of skills and experience will
+              enable me to create beautiful and functional websites. I am always
+              eager to learn new technologies and tools to become an even more
+              effective and professional developer. Furthermore, I enjoy working
+              in a team and communicating with colleagues to learn more about
+              best practices in web development and exchange ideas.
+            </p>
+            <p>
+              I am ready to collaborate with any level of experience and believe
+              that I can contribute to your team. I would be happy to answer any
+              questions and discuss potential opportunities for collaboration.
+              Thank you for your attention.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="prof-skill" id="skills">
+        <article class="skills">
+          <h2 class="title-block">Professional Skills</h2>
+          <div class="skills-box">
+            <ul class="hard-skills"></ul>
+            <div class="skills-levels"></div>
+          </div>
+        </article>
+      </section>
+      <section class="about-code">
+        <div id="aboutcode" class="title-block"><h2>Code Example</h2></div>
+        <article class="code-example">
+          <h3>CodeWars Task:</h3>
+          <p>
+            Every day you rent the car costs $40. If you rent the car for 7 or
+            more days, you get $50 off your total. Alternatively, if you rent
+            the car for 3 or more days, you get $20 off your total.
+          </p>
+          <pre
+            class="hljs sri"
+          >function rentalCarCost(<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span>) {
             <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">if</span> (<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> &gt;= <span class="hljs-number">7</span>) {
             <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> * <span class="hljs-number">40</span> - <span class="hljs-number">50</span><span class="hljs-comment" style="color: rgb(98, 114, 164);">;</span>
             } <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">else</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">if</span> ( <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> &gt;= <span class="hljs-number">3</span> &amp;&amp; <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> &lt; <span class="hljs-number">7</span>) {
@@ -102,65 +118,64 @@
             } <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">else</span> {
             <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> * <span class="hljs-number">40</span><span class="hljs-comment" style="color: rgb(98, 114, 164);">; </span>
             }</pre>
-          </article>
-        </section>
-        <section class="courses">
-          <div class="courses__text" id="courses">
-            <div class="courses__text-title"><h2>Courses</h2></div>
-          </div>
-          <div class="courses__box-items">
-            <div class="courses__box-container" id="data-course">
-            </div>
-          </div>
-        </section>
-        <section class="projects">
-          <div class="title-block" id="projects"><h2>Projects</h2></div>
-          <div class="project-block">
-            <!-- add projects with script1 -->
-          </div>
-        </section>
-        <section class="contact" id="contacts">
-          <div class="contact-education1">
-            <h2 class="contact-title">Contacts</h2>
-            <ul class="contact-info"></ul>
-          </div>
-          <div class="contact-education2">
-            <h2 class="contact-title">Education</h2>
-            <ul class="contact-info">
-              <li class="education-block">
-                <img src="assets/img/petrovsky.png" alt="Petrovsky college" />
-                <div class="college-name">
-                  <p>2004-2006</p>
-                  <p>Petrovsky College, lawyer</p>
-                  <p>Russia, Saint-Petersburg</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="about-lang">
-          <div class="language title-block">
-            <h3>Language:</h3>
-            <ul>
-              <li>English - A2+</li>
-              <li>Russian - Native ;)</li>
-            </ul>
-          </div>
-        </section>
-        <div class="social-buttons">
-          <a href="https://github.com/AlexBob98" target="_blank"
-            ><i class="soc-github"></i
-          ></a>
-          <a href="https://t.me/albobryshev/" target="_blank"
-            ><i class="soc-tg"></i
-          ></a>
-          <a href="https://www.instagram.com/al.bobryshev/" target="_blank"
-            ><i class="soc-insta"></i
-          ></a>
-          <a href="https://vk.com/alexander_bobryshev" target="_blank"
-            ><i class="soc-vk"></i
-          ></a>
+        </article>
+      </section>
+      <section class="courses">
+        <div class="courses__text" id="courses">
+          <div class="courses__text-title"><h2>Courses</h2></div>
         </div>
+        <div class="courses__box-items">
+          <div class="courses__box-container" id="data-course"></div>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="title-block" id="projects"><h2>Projects</h2></div>
+        <div class="project-block">
+          <!-- add projects with script1 -->
+        </div>
+      </section>
+      <section class="contact" id="contacts">
+        <div class="contact-education1">
+          <h2 class="contact-title">Contacts</h2>
+          <ul class="contact-info"></ul>
+        </div>
+        <div class="contact-education2">
+          <h2 class="contact-title">Education</h2>
+          <ul class="contact-info">
+            <li class="education-block">
+              <img src="assets/img/petrovsky.png" alt="Petrovsky college" />
+              <div class="college-name">
+                <p>2004-2006</p>
+                <p>Petrovsky College, lawyer</p>
+                <p>Russia, Saint-Petersburg</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-lang">
+        <div class="language title-block">
+          <h3>Language:</h3>
+          <ul>
+            <li>English - A2+</li>
+            <li>Russian - Native ;)</li>
+          </ul>
+        </div>
+      </section>
+      <div class="social-buttons">
+        <a href="https://github.com/AlexBob98" target="_blank"
+          ><i class="soc-github"></i
+        ></a>
+        <a href="https://t.me/albobryshev/" target="_blank"
+          ><i class="soc-tg"></i
+        ></a>
+        <a href="https://www.instagram.com/al.bobryshev/" target="_blank"
+          ><i class="soc-insta"></i
+        ></a>
+        <a href="https://vk.com/alexander_bobryshev" target="_blank"
+          ><i class="soc-vk"></i
+        ></a>
+      </div>
     </div>
     <footer class="container">
       <div class="footer-icons">

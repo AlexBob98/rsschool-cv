@@ -5,6 +5,11 @@ export const data = [
         "title": "Website Stickersp"
     },
     {
+        "img": "./assets/img/projects/feedback-react.png",
+        "href": "https://teal-palmier-e0539d.netlify.app/",
+        "title": "Feedback Test on React"
+    },
+    {
         "img": "./assets/img/projects/alexa.png",
         "href": "https://rolling-scopes-school.github.io/alexbob98-JSFEPRESCHOOL/portfolio/",
         "title": "Alexa Rise Portfolio"
@@ -28,5 +33,5 @@ export const data = [
         "img": "./assets/img/projects/video-player.png",
         "href": "https://rolling-scopes-school.github.io/alexbob98-JSFEPRESCHOOL/portfolio/",
         "title": "Video Player"
-    }
+    },
 ]
