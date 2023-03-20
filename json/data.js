@@ -1,8 +1,8 @@
 export const data = [
     {
         "img": "./assets/img/projects/stickersp-ru.png",
-        "href": "https://stickersp.ru",
-        "title": "Website Stickersp"
+        "href": "https://online-store-e73ngxm8h-alexbob98.vercel.app/",
+        "title": "Online Store on TypeScript"
     },
     {
         "img": "./assets/img/projects/feedback-react.png",
