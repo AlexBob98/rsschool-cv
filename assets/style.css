@@ -8,7 +8,8 @@
   --swiper-pagination-color: #000;
   --swiper-navigation-size: 25px !important;
   --swiper-pagination-bullet-size: 13px;
-  --swiper-pagination-bottom: 0px
+  --swiper-pagination-bottom: 0px;
+  --swiper-navigation-top-offset: 35%
 }
 html {
   scrollbar-width: thin;
