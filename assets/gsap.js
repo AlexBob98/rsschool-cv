@@ -32,30 +32,65 @@ gsap.from(".hero__info-img", {
 });
 
 // section about me
-gsap.from(".about-container", {
+gsap.from(".about__block", {
   duration: 1.5,
   scrollTrigger: {
     trigger: ".hero",
   },
   y: 200,
   opacity: 0,
+  clearProps: "transform",
 });
 
-// projects section
-gsap.from(".project-block", {
-  duration: 2.5,
+// section skills-block
+gsap.from(".skills-block__box", {
+  duration: 1.5,
   scrollTrigger: {
-    trigger: ".project-block",
+    trigger: ".skills",
   },
   y: 200,
   opacity: 0,
+  clearProps: "transform",
+});
+
+// section example-code__block
+gsap.from(".example-code__block", {
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: ".example-code",
+  },
+  y: 200,
+  opacity: 0,
+  clearProps: "transform",
+});
+
+// section courses__box-items
+gsap.from(".courses__box-container", {
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: ".courses",
+  },
+  y: 200,
+  opacity: 0,
+  clearProps: "transform",
+});
+
+// projects section
+gsap.from(".swiper", {
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: ".swiper",
+  },
+  y: 200,
+  opacity: 0,
+  clearProps: "transform",
 });
 
 // contact section
 gsap.from(".contact-education1 .contact-info", {
   duration: 1.5,
   scrollTrigger: {
-    trigger: ".contact-info",
+    trigger: ".contact-education1",
   },
   x: -200,
   opacity: 0,
@@ -65,8 +100,9 @@ gsap.from(".contact-education1 .contact-info", {
 gsap.from(".contact-education2 .contact-info", {
   duration: 1.5,
   scrollTrigger: {
-    trigger: ".contact-info",
+    trigger: ".contact-education2",
   },
   x: 200,
   opacity: 0,
+  clearProps: "transform",
 });

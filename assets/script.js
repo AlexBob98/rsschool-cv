@@ -1,6 +1,27 @@
 const burgerMenu = document.querySelector(".header-nav__menu-burger");
 const menuHeader = document.querySelector(".menu-show");
 // Start Menu Burger
+const cssStyles = [
+  ".hero",
+  ".about__block",
+  ".hero__info-text",
+  ".title-project",
+  ".skills-block__box",
+  ".box",
+  ".about",
+  ".skills",
+  ".project",
+  ".example-code",
+  ".courses__text",
+  ".courses__box-items",
+  ".projects",
+  ".contact",
+  ".about-lang",
+  ".footer-icons",
+  ".example-code__block",
+  ".contact-info",
+  ".back_to_top",
+];
 
 burgerMenu.addEventListener("click", () => {
   if (burgerMenu) {
@@ -14,9 +35,7 @@ burgerMenu.addEventListener("click", () => {
 // End Menu Burger
 const lightTheme = document.querySelector(".switch_theme");
 const butTheme = document.querySelector(".btn_theme");
-const blocksTheme = document.querySelectorAll(
-  ".hero, .about-container, .hero__info-text, .skills-box, .box, .about-me, .prof-skill, .project, .about-code, .courses__text, .courses__box-items, .projects, .contact, .about-lang, .footer-icons, .code-example, .contact-info, .back_to_top"
-);
+const blocksTheme = document.querySelectorAll(cssStyles);
 
 lightTheme.addEventListener("click", function () {
   butTheme.classList.toggle("light");
@@ -37,6 +56,7 @@ const lightOff = () => {
   butTheme.classList.remove("dark");
   localStorage.setItem("theme", "lightMode");
 };
+
 if (themeMode === "darkMode") {
   lightOn();
 }

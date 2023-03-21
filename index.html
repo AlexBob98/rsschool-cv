@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="icon" href="assets/img/favicon.svg" />
     <title>Aleksandr Bobryshev - CV</title>
   </head>
@@ -59,10 +60,10 @@
           />
         </div>
       </section>
-      <section class="about-me" id="about-me">
-        <div class="about-container">
+      <section class="about" id="about-me">
+        <div class="about__block">
           <img src="assets/img/mephoto.png" alt="About Me" />
-          <article class="about-text">
+          <article class="about__text">
             <h2>About Me</h2>
             <p>
               Hello, my name is Aleksandr Bobryshev, and I am a Frontend
@@ -90,18 +91,18 @@
           </article>
         </div>
       </section>
-      <section class="prof-skill" id="skills">
-        <article class="skills">
-          <h2 class="title-block">Professional Skills</h2>
-          <div class="skills-box">
-            <ul class="hard-skills"></ul>
-            <div class="skills-levels"></div>
+      <section class="skills" id="skills">
+        <div class="skills-block">
+          <h2 class="skills-block__title">Professional Skills</h2>
+          <div class="skills-block__box">
+            <ul class="skills-block__stack"></ul>
+            <div class="skills-block__level"></div>
           </div>
-        </article>
+        </div>
       </section>
-      <section class="about-code">
-        <div id="aboutcode" class="title-block"><h2>Code Example</h2></div>
-        <article class="code-example">
+      <section class="example-code">
+        <div class="example-code__title" id="aboutcode" ><h2>Code Example</h2></div>
+        <div class="example-code__block">
           <h3>CodeWars Task:</h3>
           <p>
             Every day you rent the car costs $40. If you rent the car for 7 or
@@ -109,7 +110,7 @@
             the car for 3 or more days, you get $20 off your total.
           </p>
           <pre
-            class="hljs sri"
+            class="hljs example-code__solution"
           >function rentalCarCost(<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span>) {
             <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">if</span> (<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> &gt;= <span class="hljs-number">7</span>) {
             <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> * <span class="hljs-number">40</span> - <span class="hljs-number">50</span><span class="hljs-comment" style="color: rgb(98, 114, 164);">;</span>
@@ -118,7 +119,7 @@
             } <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">else</span> {
             <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> * <span class="hljs-number">40</span><span class="hljs-comment" style="color: rgb(98, 114, 164);">; </span>
             }</pre>
-        </article>
+        </div>
       </section>
       <section class="courses">
         <div class="courses__text" id="courses">
@@ -129,9 +130,16 @@
         </div>
       </section>
       <section class="projects">
-        <div class="title-block" id="projects"><h2>Projects</h2></div>
-        <div class="project-block">
-          <!-- add projects with script1 -->
+        <div class="projects__title" id="projects"><h2>Projects</h2></div>
+        <div class="projects__slider swiper">
+          <div class="swiper-wrapper">
+            <!-- add projects with render -->
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination">
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
       <section class="contact" id="contacts">
@@ -204,9 +212,10 @@
       </div>
     </footer>
     <script src="assets/script.js"></script>
-    <script type="module" src="assets/render.js"></script>
+    <script defer type="module" src="assets/render.js"></script>
     <script defer src="assets/gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>

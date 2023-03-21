@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&display=swap");
 
+:root {
+  --swiper-navigation-color: #000;
+  --swiper-theme-color: #000;
+  --swiper-pagination-color: #000;
+  --swiper-navigation-size: 25px !important;
+  --swiper-pagination-bullet-size: 13px;
+  --swiper-pagination-bottom: 0px
+}
 html {
   scrollbar-width: thin;
   scrollbar-color: #bdae82 rgb(0, 0, 0);
@@ -27,20 +35,20 @@ html *::-webkit-scrollbar-thumb {
 body.dark {
   background: #111218;
 }
-.about-me.dark {
+.about.dark {
   background: #111218;
 }
-.prof-skill.dark {
+.skills.dark {
   background: #111218;
   color: #fff;
 }
-.skills-box.dark {
+.skills-block__box.dark {
   box-shadow: 2px 6px 22px rgb(255 255 255 / 50%);
 }
 .hero__info-text.dark {
   filter: invert(1);
 }
-.about-code.dark {
+.example-code.dark {
   background: #111218;
   color: #fff;
 }
@@ -48,7 +56,7 @@ body.dark {
   background: #111218;
   color: #fff;
 }
-.about-container.dark {
+.about__block.dark {
   box-shadow: 2px 6px 22px rgb(255 255 255 / 50%);
 }
 .box.dark {
@@ -88,7 +96,7 @@ body.dark {
   background: #111218;
   color: #fff;
 }
-.code-example.dark {
+.example-code__block.dark {
   background: #f0f0f0;
   color: #000;
   box-shadow: 2px 6px 22px rgb(255 255 255 / 50%);
@@ -300,13 +308,13 @@ nav ul li a:hover {
   background-color: #363636;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.37);
 }
-.about-me {
+.about {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #fff;
 }
-.about-container {
+.about__block {
   display: flex;
   align-items: center;
   width: 80%;
@@ -318,7 +326,7 @@ nav ul li a:hover {
   margin: -20px auto;
   z-index: 60;
 }
-.about-container img {
+.about__block img {
   height: 220px;
   border-radius: 50%;
   margin-right: 15px;
@@ -326,18 +334,18 @@ nav ul li a:hover {
 .about-codetext {
   padding-bottom: 2rem;
 }
-.code-example h2 {
+.example-code__block h2 {
   color: #6c6c6c;
   font-size: 18px;
 }
-.about-text {
+.about__text {
   margin-left: 15px;
 }
-.about-text p {
+.about__text p {
   font-size: 16px;
   line-height: 30px;
 }
-.about-text button {
+.about__text button {
   align-items: center;
   width: 145px;
   height: 50px;
@@ -351,7 +359,7 @@ nav ul li a:hover {
   letter-spacing: 0.5px;
   line-height: 25px;
 }
-.prof-skill {
+.skills {
   background: #fff;
   display: flex;
   margin: 0 auto;
@@ -362,7 +370,7 @@ nav ul li a:hover {
   padding: 50px 0px;
   margin: 0 auto;
 }
-.skills {
+.skills-block {
   padding: 2em 0;
   margin: 15px;
   width: 75%;
@@ -371,11 +379,11 @@ nav ul li a:hover {
   justify-content: center;
   flex-direction: column;
 }
-.skills li {
+.skills-block li {
   margin: 10px;
   user-select: none;
 }
-.skills-box {
+.skills-block__box {
   width: 90%;
   height: 365px;
   display: flex;
@@ -386,7 +394,7 @@ nav ul li a:hover {
   padding: 10px;
   box-shadow: 2px 2px 12px rgb(0 0 0 / 20%);
 }
-.hard-skills {
+.skills-block__stack {
   font-family: "Rubik";
   flex-basis: 15%;
   text-transform: uppercase;
@@ -397,7 +405,7 @@ nav ul li a:hover {
   line-height: 1.26rem;
   color: rgb(0, 0, 0);
 }
-.skills-levels {
+.skills-block__level {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
@@ -472,13 +480,13 @@ nav ul li a:hover {
   }
 }
 
-.about-code {
+.example-code {
   background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.code-example {
+.example-code__block {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -489,13 +497,13 @@ nav ul li a:hover {
   border-radius: 10px;
   box-shadow: 2px 2px 12px rgb(0 0 0 / 20%);
 }
-.code-example p:nth-child(1) {
+.example-code__block p:nth-child(1) {
   font-size: 22px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(170 170 170 / 40%);
   line-height: 2.7rem;
 }
-.code-example p:nth-child(2) {
+.example-code__block p:nth-child(2) {
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -613,6 +621,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 2em;
 }
 .project-block {
   display: flex;
@@ -621,76 +630,59 @@ nav ul li a:hover {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.project {
-  width: 400px;
-  height: 260px;
+.swiper {
+  width: 85%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background: #ffffffd6;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.6s;
+}
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+  width: 1.5em;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+.swiper-pagination {
+  position: inherit!important;
+  padding: 2em 0;
+}
+.swiper-block {
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 10px;
-  position: relative;
   border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 1px 2px 12px rgb(0 0 0 / 20%);
-  background: #000000;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
 }
-.project img {
+.swiper-block img {
   transition: 0.8s ease-in-out;
 }
-.project:hover img {
-  transform: scale(1.3);
+.swiper-block:hover .title-project {
+  opacity: 1;
 }
-.project .title-project span {
+.title-project {
+  bottom: 0;
   opacity: 0;
   position: absolute;
-  width: 80%;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-transition-property: top, opacity;
-  transition-property: top, opacity;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-  transition: 0.5s ease-in-out;
-}
-.title-project span a {
-  color: #fff;
-}
-.title-project span a:hover {
-  color: #aeaeae;
-}
-.project:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-.project:hover .title-project span {
-  position: absolute;
-  background: #000;
-  padding: 25px;
+  background: #fff;
+  padding: 0.5em 1em;
   border-radius: 10px;
-  color: rgb(255, 255, 255);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  display: flex;
-  z-index: 1;
-  box-shadow: 1px 1px 12px #fff;
-}
-.project .title-project:hover span {
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  box-shadow: 1px 1px 12px rgba(126, 125, 125, 0.555);
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 11px #000;
+  transition: all 0.6s;
+  width: 90%;
+  text-align: center;
 }
 .image-project img {
   width: 100%;
+  border-radius: 15px;
 }
 .contact-education1 {
   display: flex;
@@ -769,7 +761,6 @@ nav ul li a:hover {
   flex-direction: row;
   align-items: flex-start;
   margin: 0 auto;
-  padding-top: 60px;
 }
 .contact-title {
   display: flex;
@@ -891,7 +882,7 @@ nav ul li a:hover {
 .about-proj a:hover {
   color: #aaa;
 }
-.sri {
+.example-code__solution {
   display: block;
   font-size: 15px;
   line-height: 1.1rem;
@@ -932,7 +923,6 @@ nav ul li a:hover {
 .back_to_top-show {
   display: block;
 }
-
 
 @media (max-width: 1280px) {
   .hero__info-text {
@@ -1068,7 +1058,7 @@ nav ul li a:hover {
   .hero__info {
     width: 85%;
   }
-  .about-container {
+  .about__block {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1079,26 +1069,26 @@ nav ul li a:hover {
     box-shadow: 2px 2px 12px rgb(0 0 0 / 20%);
     margin: -20px auto;
   }
-  .about-container img {
+  .about__block img {
     display: none;
   }
-  .about-text {
+  .about__text {
     width: 90%;
     margin: 0 auto;
     padding: 15px;
     line-height: 1.6rem;
   }
-  .skills-box {
+  .skills-block__box {
     font-size: 12px;
     padding: 5px;
   }
-  .hard-skills {
+  .skills-block__stack {
     flex-basis: 20%;
   }
   .skills li {
     margin: 10px 0px 10px 0px;
   }
-  .sri {
+  .example-code__solution {
     font-size: 15px;
     line-height: 1.6rem;
     border-radius: 10px;
@@ -1175,17 +1165,17 @@ nav ul li a:hover {
     opacity: 1;
     top: 66px;
   }
-  .about-container {
+  .about__block {
     width: 70%;
   }
-  .skills {
+  .skills-block {
     width: 85%;
   }
-  .skills-box {
+  .skills-block__box {
     width: 100%;
     padding: 0px;
   }
-  .code-example {
+  .example-code__block {
     width: 75%;
   }
 
@@ -1193,17 +1183,17 @@ nav ul li a:hover {
     width: 235px;
     margin: 0px 0px 30px 0px;
   }
-  .hard-skills {
+  .skills-block__stack {
     flex-basis: 25%;
   }
-  .skills-levels {
+  .skills-block__levells {
     flex-basis: 60%;
   }
   .hero__info {
     flex-direction: column;
     gap: 2em;
   }
-  .sri {
+  .example-code__solution {
     font-size: 12px;
     line-height: 1.2rem;
     border-radius: 10px;
@@ -1211,6 +1201,14 @@ nav ul li a:hover {
 }
 
 @media (max-width: 565px) {
+  .hero__info-text {
+    font-size: 2em;
+    padding: 0;
+    text-align: center;
+  }
+  .hero__info-text p {
+    margin-bottom: 1.5em;
+  }
   .box {
     width: 220px;
   }
@@ -1250,10 +1248,10 @@ nav ul li a:hover {
   .header-nav__logo {
     letter-spacing: unset;
   }
-  .hard-skills {
+  .skills-block__stack {
     flex-basis: 45%;
   }
-  .skills-levels {
+  .skills-block__levells {
     flex-basis: 50%;
   }
   .hero__info-text {
@@ -1267,7 +1265,7 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: column;
   }
-  .sri {
+  .example-code__solution {
     font-size: 9px;
     line-height: 1.2rem;
     padding: 11px;
@@ -1284,10 +1282,10 @@ nav ul li a:hover {
   .contact-info {
     width: 100%;
   }
-  .about-container {
+  .about__block {
     width: 65%;
   }
-  .about-text {
+  .about__text {
     width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -1296,12 +1294,12 @@ nav ul li a:hover {
   .skills {
     width: 80%;
   }
-  .skills-box {
+  .skills-block__box {
     width: 100%;
     font-size: 12px;
     justify-content: center;
   }
-  .code-example {
+  .example-code__block {
     width: 70%;
   }
   .box {
@@ -1323,22 +1321,22 @@ nav ul li a:hover {
   .switch_theme.light {
     height: 30px;
   }
-  .hard-skills {
+  .skills-block__stack {
     flex-basis: 40%;
   }
-  .skills-levels {
+  .skills-block__levells {
     flex-basis: 50%;
   }
-  .skills-box {
+  .skills-block__box {
     width: 100%;
     padding: 10px;
   }
-  .code-example p:nth-child(2) {
+  .example-code__block p:nth-child(2) {
     font-size: 14px;
   }
   .hero__info-text {
     padding: 0em;
-}
+  }
   .box {
     margin: 0px 0px 30px 0px;
     width: 85%;
