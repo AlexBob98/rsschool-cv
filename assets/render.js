@@ -4,11 +4,29 @@ import { contact } from "../json/contact.js";
 import { courses } from "../json/courses.js";
 
 const containerProjectes = document.querySelector(".swiper-wrapper");
-const containerSkills = document.querySelector(".skills-block__stack");
-const percentSkills = document.querySelector(".skills-block__level");
 const contactContainer = document.querySelector(".contact-info");
 const courseContainer = document.getElementById("data-course");
 const fullYear = document.getElementById("year");
+const skillsContainer = document.querySelector(".skills-block__container");
+
+skills.forEach((item) => {
+  skillsContainer.append(progress(item))
+});
+
+function progress(args) {
+  const div = document.createElement('div');
+  div.classList.add('skills-block__stack')
+
+  div.innerHTML = `
+  <span>${args[0]}</span>
+  <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="${args[1]}" data-progress-color="${args[2]}" data-bg-color="#b1b0b0">
+  <div class="inner-circle"></div>
+  <p class="percentage">0%</p>
+</div>
+  `;
+  
+  return div;
+}
 
 const createDivProjectsFromDataJson = () => {
   data.map((item) => {
@@ -23,20 +41,6 @@ const createDivProjectsFromDataJson = () => {
     <span>${item.title}</span></a>
     </div>
     </div>
-    </div>`;
-  });
-};
-
-const createProjectsFromJsonData = () => {
-  skills.map((item) => {
-    containerSkills.innerHTML += `<li class="skill">${item.name}</li>`;
-    percentSkills.innerHTML += `
-    <div class="progress">
-      <span
-        class="progress-bar"
-        style="width: ${item.skills}"
-        title="${item.skills}"
-      ></span>
     </div>`;
   });
 };
@@ -91,45 +95,7 @@ const createCourseFromDataJson = () => {
 
 window.addEventListener("load", () => {
   createDivProjectsFromDataJson();
-  createProjectsFromJsonData();
   createContactFromJsonData();
   createCourseFromDataJson();
   fullYear.textContent = new Date().getFullYear();
-
-  const swiper = new Swiper(".swiper", {
-    loop: true,
-    autoHeight: true,
-    spaceBetween: 20,
-    centerSlide: "true",
-    fade: "true",
-    autoplay: {
-    delay: 5000,
-    pauseOnMouseEnter: true
-    },
-    grabCursor: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      595: {
-        slidesPerView: 2,
-      },
-      999: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-    },
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-  
 });
