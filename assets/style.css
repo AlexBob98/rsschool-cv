@@ -44,6 +44,9 @@ body.dark {
 .hero__info-text.dark {
   filter: invert(1);
 }
+div#typedtext {
+  line-height: 1.2em;
+}
 .example-code.dark {
   background: #111218;
   color: #fff;
@@ -655,8 +658,8 @@ nav ul li a:hover {
 .contact-info a:hover {
   color: #aaa;
 }
-.soc-vk {
-  background: url("../assets/img/vk-icon.png");
+.soc-in {
+  background: url("../assets/img/linkedin.png");
   width: 25px;
   height: 25px;
   background-size: contain;
@@ -793,6 +796,28 @@ nav ul li a:hover {
 .back_to_top-show {
   display: block;
 }
+#typing-text {
+  border-right: 0.15em solid orange;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#typing-text::after {
+  content: "";
+  display: inline-block;
+  width: 0.05em;
+  height: 1em;
+  margin-left: 0.1em;
+  animation: blink 1s infinite;
+}
+
 
 @media (max-width: 1280px) {
   .hero__info-text {
