@@ -10,9 +10,9 @@ export const contact = [
         "img": "./assets/img/behance-icon.png",
     },
     {
-        "href": "https://vk.com/alexander_bobryshev",
-        "name": "Vkontakte",
-        "img": "./assets/img/vk-icon.png",
+        "href": "https://www.linkedin.com/in/aleksandr-bobryshev/",
+        "name": "LinkedIn",
+        "img": "./assets/img/linkedin.png",
     },
     {
         "href": "https://t.me/albobryshev",

@@ -35,3 +35,24 @@ window.addEventListener("load", () => {
   });
   
 });
+
+const elements = document.getElementsByClassName("typing-text");
+const delay = 50;
+
+[...elements].forEach((item) => {
+  let counter = 0;
+
+  const element = item;
+  const text = element.innerHTML;
+  element.innerHTML = "";
+
+  const typeWriter = () => {
+    if (counter < text.length) {
+      element.innerHTML += text.charAt(counter);
+      counter++;
+      setTimeout(typeWriter, delay);
+    }
+  }
+  typeWriter();
+})
+
