@@ -7,6 +7,7 @@ gsap.from(".header-nav", {
   },
   y: -100,
   opacity: 0,
+  clearProps: "transform",
 });
 
 // hero text
@@ -43,7 +44,7 @@ gsap.from(".about__block", {
 });
 
 // section skills-block
-gsap.from(".skills-block__box", {
+gsap.from(".skills-block__container", {
   duration: 1.5,
   scrollTrigger: {
     trigger: ".skills",
@@ -94,6 +95,7 @@ gsap.from(".contact-education1 .contact-info", {
   },
   x: -200,
   opacity: 0,
+  clearProps: "transform",
 });
 
 // contact section

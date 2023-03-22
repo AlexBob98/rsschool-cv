@@ -1,0 +1,37 @@
+.swiper {
+  width: 85%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background: #ffffffd6;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.6s;
+}
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+  width: 1.5em;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+.swiper-pagination {
+  position: inherit !important;
+  padding: 2em 0;
+}
+.swiper-block {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.swiper-block img {
+  transition: 0.8s ease-in-out;
+}
+.swiper-block:hover .title-project {
+  opacity: 1;
+}

@@ -6,7 +6,6 @@ const cssStyles = [
   ".about__block",
   ".hero__info-text",
   ".title-project",
-  ".skills-block__box",
   ".box",
   ".about",
   ".skills",
