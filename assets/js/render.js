@@ -1,7 +1,7 @@
-import { data } from "../json/data.js";
-import { skills } from "../json/skills.js";
-import { contact } from "../json/contact.js";
-import { courses } from "../json/courses.js";
+import { data } from "../../json/data.js";
+import { skills } from "../../json/skills.js";
+import { contact } from "../../json/contact.js";
+import { courses } from "../../json/courses.js";
 
 const containerProjectes = document.querySelector(".swiper-wrapper");
 const contactContainer = document.querySelector(".contact-info");
