@@ -35,3 +35,22 @@
 .swiper-block:hover .title-project {
   opacity: 1;
 }
+.text-typing {
+  width: 18em;
+  color: black;
+  font-size: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 5s steps(50, end);
+  line-height: 1em;
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
