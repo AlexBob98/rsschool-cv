@@ -150,17 +150,9 @@ header .navigation {
   line-height: 30px;
 }
 .menu-item a:hover:before {
-  -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
   transform: scaleX(1);
-  -webkit-transform-origin: left;
-  -ms-transform-origin: left;
   transform-origin: left;
-  -webkit-transition: -webkit-transform 0.6s;
-  transition: -webkit-transform 0.6s;
-  -o-transition: transform 0.6s;
   transition: transform 0.6s;
-  transition: transform 0.6s, -webkit-transform 0.6s;
 }
 .menu-item a {
   position: relative;
@@ -173,17 +165,9 @@ header .navigation {
   position: absolute;
   left: 0;
   bottom: -5px;
-  -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transform-origin: right;
-  -ms-transform-origin: right;
   transform-origin: right;
-  -webkit-transition: -webkit-transform 0.6s;
-  transition: -webkit-transform 0.6s;
-  -o-transition: transform 0.6s;
   transition: transform 0.6s;
-  transition: transform 0.6s, -webkit-transform 0.6s;
 }
 nav {
   display: flex;
@@ -648,24 +632,12 @@ nav ul li a:hover {
 }
 .contact-image {
   flex-basis: 15%;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: gray;
-  -webkit-transition: background 0.5s ease;
-  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 .contact-image:hover {
   opacity: 1;
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  -o-filter: grayscale(0);
   filter: grayscale(0);
-  filter: gray;
 }
 .contact-text {
   justify-content: center;
