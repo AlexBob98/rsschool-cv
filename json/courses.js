@@ -1,11 +1,11 @@
 export const courses = [
     {
-        "img": "./assets/img/codebasics.png",
+        "img": "./assets/img/icons/codebasics.png",
         "name": "CodeBasics",
         "course": ["HTML / CSS", "JAVASCRIPT"],
     },
     {
-        "img": "./assets/img/hexlet.png",
+        "img": "./assets/img/icons/hexlet.png",
         "name": "Hexlet",
         "course": ["JAVASCRIPT", "GITHUB"],
     },
@@ -18,7 +18,7 @@ export const courses = [
         "title": "(Certificate)"
     },
     {
-        "img": "./assets/img/logomachine.png",
+        "img": "./assets/img/icons/logomachine.png",
         "name": "Logomachine",
         "course": ["Graphic Designer", "WebDesign on Figma"],
     },
