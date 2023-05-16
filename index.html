@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/swiper.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="icon" href="assets/img/favicon.svg">
+    <title>Aleksandr Bobryshev - CV</title>
+  </head>
+  <body>
+    <div class="wrapper container">
+      <header class="header-nav">
+        <div class="header-nav__logo">
+          <h1>Aleksandr Bobryshev</h1>
+        </div>
+        <nav class="header-nav__menu">
+          <div class="header-nav__burger-menu">
+            <div class="header-nav__menu-burger">
+              <span></span>
+            </div>
+            <ul class="navigation menu-show">
+              <li class="menu-item">
+                <a href="#about-me">About Me</a>
+              </li>
+              <li class="menu-item">
+                <a href="#skills">Skills</a>
+              </li>
+              <li class="menu-item">
+                <a href="#aboutcode">Code</a>
+              </li>
+              <li class="menu-item">
+                <a href="#courses">Courses</a>
+              </li>
+              <li class="menu-item">
+                <a href="#projects">Projects</a>
+              </li>
+              <li class="menu-item">
+                <a href="#contacts">Contact Info</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div title="On/Off Dark Mode" class="switch_theme btn_theme"></div>
+      </header>
+      <div class="hero">
+        <div class="hero__info">
+          <div class="hero__info-text">
+            <p class="typing-text">Hello everyone.</p>
+            <p class="typing-text">My name is Aleksandr Bobryshev.</p>
+            <p class="typing-text">I'm a Frontend Developer.</p>
+            <a class="hero__info-download" href="assets/cv.pdf" download>Download CV</a>
+          </div>
+          <img class="hero__info-img" src="assets/img/mephoto.png" alt="Aleksandr Bobryshev">
+        </div>
+      </div>
+      <section class="about" id="about-me">
+        <div class="about__block">
+          <img src="assets/img/mephoto.png" alt="About Me">
+          <div class="about__text">
+            <h2>About Me</h2>
+            <p>
+              Hello, my name is Aleksandr Bobryshev, and I am a Frontend
+              Developer. I am passionate about creating interactive websites and
+              applications that can improve people's lives. 
+            <br>I have a
+              degree/certificates in Rolling Scopes School (EPAM) and have
+              experience working with JavaScript, TypeScript and React
+              framework. I also have basic knowledge in NodeJS.
+            </p>
+            <p>
+              I am confident that my combination of skills and experience will
+              enable me to create beautiful and functional websites. I am always
+              eager to learn new technologies and tools to become an even more
+              effective and professional developer. Furthermore, I enjoy working
+              in a team and communicating with colleagues to learn more about
+              best practices in web development and exchange ideas.
+            </p>
+            <p>
+              I am ready to collaborate with any level of experience and believe
+              that I can contribute to your team. I would be happy to answer any
+              questions and discuss potential opportunities for collaboration.
+              Thank you for your attention.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="skills-block">
+          <h2 class="skills-block__title">Professional Skills</h2>
+          <div class="skills-block__container"></div>
+        </div>
+      </section>
+      <section class="example-code">
+        <div class="example-code__title" id="aboutcode" ><h2>Code Example</h2></div>
+        <div class="example-code__block">
+          <h3>CodeWars Task:</h3>
+          <p>
+            Every day you rent the car costs $40. If you rent the car for 7 or
+            more days, you get $50 off your total. Alternatively, if you rent
+            the car for 3 or more days, you get $20 off your total.
+          </p>
+          <pre
+            class="hljs example-code__solution"
+          >function rentalCarCost(<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span>) {
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">if</span> (<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> &gt;= <span class="hljs-number">7</span>) {
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> * <span class="hljs-number">40</span> - <span class="hljs-number">50</span><span class="hljs-comment" style="color: rgb(98, 114, 164);">;</span>
+            } <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">else</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">if</span> ( <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> &gt;= <span class="hljs-number">3</span> &amp;&amp; <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> &lt; <span class="hljs-number">7</span>) {
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> * <span class="hljs-number">40</span> - <span class="hljs-number">20</span><span class="hljs-comment" style="color: rgb(98, 114, 164);">;</span>
+            } <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">else</span> {
+            <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">return</span> <span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">d</span> * <span class="hljs-number">40</span><span class="hljs-comment" style="color: rgb(98, 114, 164);">; </span>
+            }</pre>
+        </div>
+      </section>
+      <section class="courses">
+        <div class="courses__text" id="courses">
+          <div class="courses__text-title"><h2>Courses</h2></div>
+        </div>
+        <div class="courses__box-items">
+          <div class="courses__box-container" id="data-course"></div>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="projects__title" id="projects"><h2>Projects</h2></div>
+        <div class="projects__slider swiper">
+          <div class="swiper-wrapper">
+            <!-- add projects with render -->
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contacts">
+        <div class="contact-education1">
+          <h2 class="contact-title">Contacts</h2>
+          <ul class="contact-info"></ul>
+        </div>
+        <div class="contact-education2">
+          <h2 class="contact-title">Education</h2>
+          <ul class="contact-info">
+            <li class="education-block">
+              <img src="assets/img/icons/petrovsky.png" alt="Petrovsky college">
+              <div class="college-name">
+                <p>2004-2006</p>
+                <p>Petrovsky College, lawyer</p>
+                <p>Russia, Saint-Petersburg</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-lang">
+        <div class="language title-block">
+          <h3>Language:</h3>
+          <ul>
+            <li>English - A2+</li>
+            <li>Russian - Native</li>
+          </ul>
+        </div>
+      </section>
+      <div class="social-buttons">
+        <a href="https://github.com/AlexBob98" target="_blank"><i class="soc-github"></i></a>
+        <a href="https://t.me/albobryshev/" target="_blank"><i class="soc-tg"></i></a>
+        <a href="https://www.instagram.com/al.bobryshev/" target="_blank"><i class="soc-insta"></i></a>
+        <a href="https://www.linkedin.com/in/aleksandr-bobryshev/" target="_blank"><i class="soc-in"></i></a>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="footer-icons">
+        <div class="github-codewars-icons">
+          <a class="github-icon" href="https://github.com/AlexBob98" target="_blank">
+            <img width="35" src="assets/img/icons/github.png" alt="Github icon"></a>
+          <a class="cw-icon" href="https://www.codewars.com/users/AlexBob98" target="_blank">
+            <img width="35" src="assets/img/icons/codewars.png" alt="Codewars icon"></a>
+        </div>
+        <span id="year"></span>
+        <a class="rs-icon" href="https://rs.school/js/" target="_blank">
+          <img width="100" src="assets/img/rs_school_js.svg" alt="RS School icon"></a>
+        <a class="back_to_top" title="Наверх">&uarr;</a>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/render.js"></script>
+    <script defer src="assets/js/gsap.js"></script>
+    <script defer src="assets/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/progressbar.js"></script>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(93600604, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/93600604" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  </body>
+</html>
